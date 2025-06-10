@@ -147,6 +147,7 @@ select::-ms-expand {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #ECEFF4;
 }
 
 .header__inner {
@@ -184,5 +185,130 @@ select::-ms-expand {
 @media screen and (max-width: 768px) {
   .header__button-text {
     font-size: 1rem;
+  }
+}
+
+.fv__content {
+  background-color: #ECEFF4;
+}
+
+.fv__inner {
+  padding-top: 64px;
+  max-width: 1080px;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-inline: auto;
+}
+@media screen and (max-width: 1024px) {
+  .fv__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .fv__text {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 32px;
+  }
+}
+
+.fv__title {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.55;
+  color: #4C566A;
+}
+@media screen and (max-width: 768px) {
+  .fv__title {
+    font-size: 30px;
+  }
+}
+
+.fv__list {
+  list-style: url("../images/Vector.svg") inside;
+  margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .fv__list {
+    margin-top: 14px;
+  }
+}
+
+.fv__item {
+  font-size: 18px;
+  font-weight: 700;
+  color: #4C566A;
+  line-height: 1.75;
+}
+@media screen and (max-width: 768px) {
+  .fv__item {
+    font-size: 16px;
+  }
+}
+
+.fv__item:not(:first-child) {
+  margin-top: 6px;
+}
+
+.fv__button {
+  background-color: #4C566A;
+  margin-top: 24px;
+  border-radius: 8px;
+}
+
+.fv__button-text {
+  position: relative;
+  color: #ECEFF4;
+  padding: 15px 54px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  .fv__button-text {
+    padding: 14.5px 58px;
+  }
+}
+
+.fv__button-text::after {
+  position: absolute;
+  content: url("../images/button-arrow.svg");
+  display: block;
+  width: 14px;
+  height: 16px;
+  right: 10px;
+}
+
+.fv__img {
+  width: 540px;
+  aspect-ratio: 540/465;
+}
+@media screen and (max-width: 1024px) {
+  .fv__img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    aspect-ratio: 226/195;
+    margin-top: 40px;
   }
 }
