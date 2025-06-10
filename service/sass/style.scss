@@ -1,3 +1,48 @@
 @use "./base/base";
 @use "./base/reset";
 @use "./global" as *;
+
+
+// =====================================
+// header
+// =====================================
+
+.header {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.header__inner {
+    max-width: 1080px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: auto;
+
+}
+
+.header__logo {
+    width:55px;
+    aspect-ratio: 55/20;
+}
+
+.header__button {
+    padding: 12px 16px;
+    background-color:$bg_button;
+    border-radius: 6px;
+}
+
+.header__button-text {
+    color: $font-light;
+    font-size: 1.125rem;
+    font-weight: $bold;
+    line-height: 1;
+    @include mq("md") {
+        font-size: 1rem;
+    }
+}
+
