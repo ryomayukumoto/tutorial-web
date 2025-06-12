@@ -23,6 +23,9 @@
   <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" sizes="180x180">
 
   <!-- Google Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
 
   <!-- css -->
   <link rel="stylesheet" href="./css/style.css">
@@ -30,7 +33,129 @@
 
 <body>
 
-  <main></main>
+  <!-- ヘッダー -->
+   <header class="header">
+    <div class="header__inner">
+      <img src="./images/logo.svg" alt=".doc" class="header__logo">
+      <button class="header__button"><p class="header__button-text">登録/ログイン</p></button>
+    </div>
+   </header>
+
+  <main>
+
+    <!-- FV -->
+     <div class="fv">
+      <div class="fv__content">
+        <div class="fv__inner">
+          
+          <div class="fv__text">
+            <h1 class="fv__title">
+              さくっと、パス付き資<br>
+              料の作成&共有
+            </h1>
+            <ul class="fv__list">
+              <li class="fv__item">ストレスなくサクサク書ける</li>
+              <li class="fv__item">ドキュメントはパス付きで共有可能</li>
+              <li class="fv__item">ベータ版の期間は完全無料</li>
+            </ul>
+            <button class="fv__button"><p class="fv__button-text">登録する</p></button>
+          </div>
+          
+          <img src="./images/top-kv-illustration.png" alt="" class="fv__img">
+        </div>
+
+      </div>
+      <div class="fv__bottom">
+        <img src="./images/top-kv-wave-bottom.svg" alt="" class="fv__bottom-img">
+      </div>
+     </div>
+
+     <!-- 快適さへのこだわり（feature） -->
+      <section class="feature">
+        <div class="feature__inner">
+          <h2 class="feature__header">快適さへのこだわり</h2>
+          <ul class="feature__list">
+
+            <li class="feature__item">
+              <img src="./images/top-feature-icon01.svg" alt="" class="feature__img">
+              <h3 class="feature_title">シンプルな機能</h3>
+              <p class="feature_description">
+                多機能でない分、わかりやすく・使いやす機能。書くこと、共有することにのみ特化。
+              </p>
+            </li>
+
+            <li class="feature__item">
+              <img src="./images/top-feature-icon02.svg" alt="" class="feature__img">
+              <h3 class="feature_title">綺麗なドキュメント</h3>
+              <p class="feature_description">
+                見やすいドキュメント、見やすい管理画面。シンプルでわかりやすいデザイン。
+              </p>
+            </li>
+
+            <li class="feature__item">
+              <img src="./images/top-feature-icon03.svg" alt="" class="feature__img">
+              <h3 class="feature_title">書きやすいエディタ</h3>
+              <p class="feature_description">
+                多機能でない分、わかりやすく・使いやす機能。書くこと、共有することにのみ特化。
+              </p>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <section class="function">
+        <div class="function__top">
+          <img src="./images/top-function-wave-top.svg" alt="" class="function__top-img">
+        </div>
+        <div class="function__content">
+          <div class="function__inner">
+            <h2 class="function__header">.docの機能</h2>
+            <ul class="function__list">
+              <li class="function__item">
+                <img src="./images/top-function-document@2x.jpg" alt="" class="function__img">
+                <div class="function__text">
+                  <h3 class="function__title">ドキュメント作成</h3>
+                  <p class="function__description">装飾はボタンをワンクリック、もしくはショートカットキーで、綺麗に作成可能。</p>
+                </div>
+              </li>
+              <li class="function__item">
+                <img src="./images/top-function-share@2x.jpg" alt="" class="function__img">
+                <div class="function__text">
+                  <h3 class="function__title">webページとして共有可能</h3>
+                  <p class="function__description">パスワード付き共有 / 一般公開(URLを知っていれば閲覧可)/ 非公開の3つを用意。</p>
+                </div>
+              </li>
+              <li class="function__item">
+                <img src="./images/top-function-tag@2x.jpg" alt="" class="function__img">
+                <div class="function__text">
+                  <h3 class="function__title">タグでドキュメントを管理</h3>
+                  <p class="function__description">ドキュメントはタグ付けすることで、分類が可能。もちろん追加削除 / 複数指定も可能。</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="function__bottom">
+          <img src="./images/top-function-wave-bottom.svg" alt="" class="function__bottom-img">
+        </div>
+      </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li class="footer__item"><a href="" class="footer__link">トップ</a></li>
+          <li class="footer__item"><a href="" class="footer__link">利用規約</a></li>
+          <li class="footer__item"><a href="" class="footer__link">プライバシーポリシー</a></li>
+          <li class="footer__item"><a href="" class="footer__link">運営会社</a></li>
+        </ul>
+      </nav>
+      <p class="copyright">&copy; 2021 dot-doc inc.</p>
+    </div>
+  </footer>
 
 </body>
 
