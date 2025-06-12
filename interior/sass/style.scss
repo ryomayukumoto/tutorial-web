@@ -1,3 +1,15 @@
 @use "./base/base";
 @use "./base/reset";
 @use "./global" as *;
+
+// コンテンツ幅（1080px）
+.content__wide {
+    max-width: 1116px;
+    padding: 18px 0;
+}
+
+// コンテンツ幅（920px）
+.content__narrow {
+    max-width: 920px;
+    padding: 18px 0;
+}
